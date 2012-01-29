@@ -1,0 +1,13 @@
+minisat4j eases the use of Minisat from Java programs. Minisat is used by
+calling the configured executable, writing some text to its standard input and
+reading the output once it's completed.
+
+The configuration file solver.cfg must be present but may be empty. Currently
+only two options are recognized:
+
+solver.executable - this denotes the name of the executable of minisat. Some
+distributions choose other names than minisat (e.g. Ubuntu Linux uses minsat2).
+
+verbose - can only be true or false. If this option is set to true the solver
+prints every constraint that gets passed to minisat on stdout. It is recommended
+to only turn this option on when dealing with small constraint systems.
